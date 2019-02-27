@@ -1,0 +1,70 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": true,
+		"es6": false,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"nodeModules": false,
+		"autoAudits": false,
+		"uglifyFileName": true
+	},
+	"miniprogramRoot": "dist/wx/",
+	"compileType": "miniprogram",
+	"appid": "wx3a902b15c04b267a",
+	"projectname": "mp-project",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 4,
+			"list": [
+				{
+					"id": -1,
+					"name": "tuanDetail",
+					"pathName": "pages/tuanDetail/main",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "mypinList",
+					"pathName": "pages/mypinList/main",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/main",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "logs",
+					"pathName": "pages/logs/main",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pinActivity",
+					"pathName": "pages/pinActivity/main",
+					"query": ""
+				}
+			]
+		}
+	}
+}

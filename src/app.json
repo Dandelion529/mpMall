@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/index/main",
+    "pages/logs/main",
+    "pages/counter/main",
+    "pages/mypinList/main",
+    "pages/tuanDetail/main",
+    "pages/pinActivity/main",
+    "pages/user/main"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "拼多更实惠",
+    "navigationBarTextStyle": "black"
+  }
+}

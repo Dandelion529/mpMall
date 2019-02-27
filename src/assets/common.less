@@ -1,0 +1,769 @@
+/* 通用样式 less常用方式:变量，混合，嵌套*/
+@pinBgColor: #fcc04e;
+@orange:#e43240;
+@gray:#999;
+@red: #e43240;
+@white:#fff;
+@width:100%;
+@height: 100%;
+
+page {
+    background: #eee;
+    color: #333;
+    font-size: 32rpx;
+    height: @height;
+}
+
+.flex-x {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+
+.flex-cloumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+} 
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.deleteLine {
+    display: inline-block;
+    width: 50rpx;
+    text-decoration: line-through;
+}
+
+.f24 {
+    font-size: 24rpx;
+}
+
+.scrollY {
+    width: @width;
+    height: @height;
+    margin-bottom: 200rpx;
+}
+
+.shareList {
+    padding: 20rpx 30rpx;
+    background: #fff;
+    border-bottom: 2rpx solid #ddd;
+}
+
+.whiteBg {
+    background-color: @white
+}
+
+.noBorder{
+    border-bottom: none
+}
+
+.rightArrow {
+    width: 15rpx; 
+    height: 15rpx;
+    margin-top: 4rpx; 
+    border-bottom: 5rpx solid; 
+    border-right: 5rpx solid;
+    transform: rotate(-45deg);   
+    font-size: 18rpx;
+    color: #bbbbb9;
+    vertical-align: top;
+}
+    
+/* 小圆点样式 */
+.indicator-dots {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20rpx;
+}
+
+.indicator-dots .item {
+    width: 12rpx;
+    height: 12rpx;
+    margin-right: 12rpx;
+    background: rgb(5, 4, 4);
+    border-radius: 50%;
+    opacity: 0.3;
+}
+
+.indicator-dots .item:last-child {
+    margin-right: 0;
+}
+
+.indicator-dots .item.cur {
+    opacity: 0.7;
+}
+
+/* 优惠券详情样式 */
+.quanBox {
+    margin: 20rpx 0;
+    font-size: 28rpx;
+    background: @white;
+    border: 2rpx solid #ddd;  
+}
+
+.quanBox .activity {
+    color: #666;
+    font-size: 28rpx;
+}
+
+.line {
+    padding: 20rpx;
+}
+
+.quanList {
+    padding: 15rpx 75rpx;
+    color: @gray
+}
+
+.quanList:last-child{
+    padding-bottom: 30rpx;
+}
+
+.f32 {
+    font-size: 32rpx;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.foodIcon {
+    width: 135rpx;
+    height: 135rpx;
+    margin-right: 25rpx;
+}
+
+.tr {
+    text-align: center;
+}
+
+.mr {
+    margin-right: 15rpx;
+}
+
+.mt {
+    margin-bottom: 20rpx;
+}
+
+/*轮播图*/
+
+.swiperContent {
+    position: relative;
+    height: auto;
+    color: #000;
+    font-size: 28rpx;
+    swiper {
+        width:@width;
+        .heightIndex {
+            height: 329rpx; 
+        }
+
+        &.heightDetail {
+            height: 500rpx; 
+        } 
+
+        .swiper-item {
+            width:@width;
+            box-sizing: border-box;
+        }
+
+        .homeBg {
+            width:@width;
+            height: 329rpx;
+        }
+
+        .pinBg {
+            width:@width;
+            height: 500rpx;
+        }  
+    }
+}
+
+/* 活动规则模态框样式 */
+.commonMask {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+}
+  
+.alertContent {
+    position: fixed;
+    top: 320rpx;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width:@width;
+    height: 50%;
+    z-index: 999;
+}
+  
+.alertList {
+    margin: 100rpx;
+    font-size: 30rpx;
+    border-radius: 15rpx;
+    color: #757474;
+    background-color: @white;
+}
+  
+.alertTitle {
+    text-align: center;
+    padding-bottom: 20rpx;
+    border-bottom: 2rpx solid #ddd;
+}
+  
+.alertTitle image {
+    width: 40rpx;
+    height: 40rpx;
+}
+  
+.desc {
+    padding: 20rpx 0;
+    font-size: 26rpx;
+    line-height: 40rpx;
+    height: 500rpx;
+    overflow-y: scroll;
+}
+  
+.desc view {
+    margin-bottom: 20rpx;
+}
+  
+.desc text {
+    display: block;
+    text-indent: 10rpx;
+}
+
+/* 首页样式 */
+#home {    
+    
+    /* 首页内容样式 */
+    .content {
+        width: 689rpx;
+        height: auto;
+        margin: 25rpx 30rpx;
+        background-color: @white;
+        border-top-left-radius: 50rpx;
+        border-top-right-radius: 50rpx;
+        border-bottom-left-radius: 25rpx;
+        border-bottom-right-radius: 25rpx;
+        image {
+            width: 689rpx;
+            height: 286rpx;
+        }
+        .contentInfo {
+            padding: 19rpx 22rpx;
+        }
+    
+        .contentInfo:first {
+            width: 80%;
+        }
+    
+        .title {
+            font-size: 30rpx;
+            font-weight: bold;
+        }
+
+        .priceBox {
+            font-size: 28rpx;
+            color: #9b9b9b;
+        }
+        
+        .hotPrice {
+            padding-right: 10rpx;
+            font-size: 36rpx;
+            color: @orange;
+            font-weight: bold;
+        }
+        
+        .lines {
+            display: inline-block;
+            margin: 10rpx 10rpx 0rpx 20rpx;
+            color: #ddd;
+        }
+        
+        .goActicityBtn {
+            display: inline-block;
+            padding: 0rpx 22rpx;
+            border-radius: 30rpx;
+            height: 60rpx;
+            line-height: 60rpx;
+            color: @white;
+            font-size: 28rpx;
+            background: linear-gradient(to right, rgba(30, 153, 255, 0.68), rgba(30, 153, 255, 1));
+        }
+        
+        .gray {
+            background: #ddd !important;
+        }
+        
+        .myGroupon {
+            position: fixed;
+            bottom: 40rpx;
+            right: 30rpx;
+            width: 110rpx;
+            height: 111rpx;
+        }
+        
+        .loadingStyle {
+            height: 60rpx;
+            text-align: center;
+            line-height: 60rpx;
+            font-size: 28rpx;
+            color: #333;
+        }
+    }
+    
+    /* 首页底部样式 */
+    .BottomTost {
+        display: flex;
+        width:@width;
+        height: 60rpx;
+        align-items: center;
+        justify-content: center;
+        color: @gray;
+        font-size: 26rpx;
+        margin: 15rpx 0;
+    }
+}
+
+/* 拼团详情 */
+#tuanDetail {
+    width:@width;
+    height: @height;
+    .tuanDetailPage {
+        margin-bottom: 190rpx;
+        .swiperContent {
+            position: relative;
+            height: 500rpx;
+            color: #000000;
+            font-size: 28rpx;
+        }
+        .pinDetailContent {
+            .titielBox {
+                height: 80rpx;
+                padding: 10rpx 20rpx;
+                /* background:rgb(#f66f1d, #fd610e, #fe690f,#fb7c1d,#fa8e2c,#fdaf40,#f6c346) */
+                background: linear-gradient(to right, #f66f1d,#fa8e2c,#fdaf40,#f6c346);
+            }
+
+            .m6 {
+                margin-top: 6rpx;
+            }
+
+            .m10 {
+                margin: 0rpx 20rpx;
+            }
+
+            .userIcon {
+                width: 45rpx;
+                height: 45rpx;
+            }
+
+            .userTag {
+                // width: 120rpx;
+                padding: 0rpx 5rpx;
+                border: 2rpx solid @white;
+            }
+
+            .hotBag {
+                display: inline-block;
+                vertical-align: middle;
+                width: 80rpx;
+                height: 80rpx;
+            }
+
+            .middle {
+                display: inline-block
+            }
+
+            .leftPart {
+                color: @white;
+                font-size: 28rpx;
+            }
+    
+            .price {
+                margin:0 20rpx;
+            }
+            
+            .price>text:last-child {
+                font-size: 24rpx;
+            }
+    
+            .f42 {
+                font-size: 42rpx;
+            }
+            
+            .rightPart {
+                font-size: 28rpx;
+                color: #fff;
+            }
+            /* 优惠券详情 */
+            .detailBox {
+                padding: 20rpx 15rpx;
+                background: @white;
+                border: 2rpx solid #ddd;
+            }
+
+            .tag {
+                width: 70%;
+                color: #666;
+            }
+
+            .m20 {
+                margin-bottom: 15rpx;
+            }
+
+            .redBg {
+                padding: 0rpx 10rpx;
+                margin-right: 18rpx;
+                border-radius: 8rpx;
+                background: @red;
+                color: @white;
+            }
+            /* 拼团流程样式 */
+            .p20 {
+                padding: 20rpx; 
+                color: #666
+            }
+            
+            .p20 view {
+                width: 25%;
+                text-align: center
+            }
+        }
+        
+    }
+    /* 拼团底部tab */
+    .pinBar {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width:@width;
+        height: 100rpx;
+        background: @white;
+        border-top: 2rpx solid #ddd
+    }
+
+    .tab-user {
+        width: 50rpx;
+        height: 50rpx;
+        margin-top: 10rpx;
+    }
+
+    .tab-shop {
+        width: 45rpx;
+        height: 50rpx;
+        margin-top: 10rpx;
+    }
+
+    .common {
+        flex: 1;
+    }
+
+    .common text {
+        color: #ccc;
+        font-size: 22rpx;
+    }
+
+    .activeBox {
+        flex: 1.5;
+        padding: 10rpx;
+        font-size: 28rpx;
+        background: @pinBgColor;
+        color: @white;
+    }
+
+    .orange {
+        color: @orange
+    }
+}
+
+/* 我的拼团样式 */
+#mypinListPage {
+    /* tab展示 */
+    .listBg {
+        width: @width;
+        height: 172rpx;
+    }
+
+    .couponHeader {
+        position: relative;
+        top: -8rpx;
+        left: 0;
+        width: @width;
+        height: auto;
+        font-size: 28rpx;
+        background: @white;
+        .swiper-tab{
+            width: 100%;
+            padding: 0rpx 40rpx;
+            text-align: center;
+            background-color: #fff;
+            height: 88rpx;
+            line-height: 88rpx;
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+        }
+        
+        .swiper-tab-item{
+            width: 17%; 
+            color:#434343;
+        }
+        
+        .active{
+            color:#333;
+            border-bottom: 6rpx solid #51b0ff;
+        }
+        
+        swiper{
+          text-align: center;
+        }        
+    }
+    
+    /* 列表样式 */
+    .couponList {
+        background-color: @white;
+        color: #333;
+        padding: 0rpx 0rpx 20rpx 0rpx;
+        margin: 25rpx 35rpx;
+        border-radius: 20rpx;
+        box-shadow: 2px 4px 8px #88888845;
+        .btLine {
+            padding: 20rpx 0;
+            margin-bottom: 20rpx;
+            font-size: 28rpx;
+            border-bottom: 2rpx solid #ddd;
+        }
+
+        .pl20 {
+            padding-left: 20rpx;
+        }
+
+        .box {
+            padding: 0 35rpx;
+        }
+
+        .intro {
+            width: @width;
+            padding-bottom: 20rpx;
+            .foodName {
+                display: block;
+                color: #333;
+                font-size: 30rpx;
+                padding-bottom: 10rpx;
+                font-weight: bold;
+                text-align: left;
+            }
+
+            .mt {
+                margin-top: 10rpx;
+            }
+
+            .voucherTime {
+                padding-right: 10rpx;
+                font-size: 22rpx;
+                color: @gray;
+            }
+
+            .voucherTag {
+                width: 80rpx;
+                padding: 5rpx 8rpx;
+                background-color: #f75656;
+                font-size: 20rpx;
+                color: @white;
+                border-radius: 20rpx;
+                margin: 10rpx 0; 
+            }
+
+            .processLines {
+                width: 180rpx;
+                height: 7rpx;
+                margin:0 10rpx;
+            }
+            
+            .num {
+               font-size: 20rpx; 
+                color: @gray;
+            }
+        }
+    }
+
+    /* 未拼团 */
+    .pinBox {
+        color: #666;
+        font-size: 28rpx;
+        .picMiddle {
+            display: block;
+            margin: 80rpx auto 20rpx;
+            width: 307rpx;
+            height: 203rpx;
+        }
+
+        button {
+            width: 300rpx;
+            height: 90rpx;
+            margin-top: 200rpx;
+            line-height: 90rpx;
+            border-radius: 50rpx;
+            background: #fff;
+            text-align: center;
+            font-size: 30rpx;
+            color: #666;
+            border: 2rpx solid #ddd;
+        }
+    }
+}
+
+/* 拼团活动 */
+#activityPage {
+    width: @width;
+    height: @height;
+    /* 拼团成功 */
+    .pinSuccess {
+        background: @white;
+        margin-bottom: 20rpx;
+    }
+
+    .topBox {
+        padding: 20rpx 10rpx;
+        background: @white;
+    }
+
+    .box {
+        margin: 20rpx 0;
+        background: @white;
+        font-size: 28rpx;
+    }
+
+    .voucherTag {
+        width: 80rpx;
+        padding: 5rpx 8rpx;
+        background-color: #f75656;
+        font-size: 20rpx;
+        color: #fff;
+        border-radius: 20rpx;
+        margin: 10rpx 0; 
+    }
+    
+    .voucherTime {
+        padding-right: 10rpx;
+        font-size: 22rpx;
+        color: #999;
+    }
+
+    .picMiddle {
+        display: block;
+        margin:  0 auto;
+        padding: 50rpx 0;
+        width: 307rpx;
+        height: 203rpx;
+    }
+
+    .rightBt {
+        position: absolute;
+        top: 20rpx;
+        right: 30rpx;
+        width: 180rpx;
+        height: 60rpx;
+        line-height: 60rpx;
+        border: 2rpx solid #ddd;
+        border-radius: 50rpx;
+        background: @white;
+        font-size: 28rpx;
+    }
+
+    .p30 {
+        padding: 30rpx 0 0rpx 0;
+    }
+
+    .bigFont {
+        font-size: 36rpx;
+        font-weight: bold;
+        text-align: center;
+        margin: 10rpx;
+    }
+
+    .smallText {
+        margin: 25rpx 0;
+        text-align: center;
+    }
+
+    .start {
+        padding: 26rpx;
+        background: @white;
+        margin:  0 auto;
+        text-align: center
+    }
+
+    .sharebtn {
+        display: inline-block;
+        height: 80rpx;
+        padding: 0 150rpx;
+        line-height: 80rpx;
+        border-radius: 40rpx;
+        letter-spacing: 2rpx;
+        color: @white;
+        background: linear-gradient(to right, rgba(30, 153, 255, 0.68), rgba(30, 153, 255, 1));
+    }
+
+    .mg {
+        margin: 50rpx auto 30rpx;
+    }
+
+    .gray {
+        color: @gray
+    }
+
+    .red {
+        color: @red;
+    }
+
+    .introTip {
+        padding: 15rpx 20rpx;
+        background: #fff;
+        border: 2rpx solid #ddd;
+        color: #666;
+        font-size: 26rpx;
+    }
+
+    .introTip view:nth-child(1) {
+        width: 15%;
+    }
+    
+    .introTip view:nth-child(2) {
+        width: 45%;
+    }
+    
+    .introTip view:nth-child(3) {
+        width: 40%;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
