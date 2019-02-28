@@ -54,6 +54,7 @@ export default {
       if (v) {
         timer = setTimeout(() => {
           this.showToast = false
+          // 子组件调起父组件
           this.$emit('update:visible', false)
         }, this.duration)
       }

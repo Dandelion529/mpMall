@@ -52,7 +52,6 @@ export default {
     data(){
         return{
             currentTab: 0,
-            // tabIndex:0,
             tab:['拼团中','拼团成功','拼团失败','退货拼团'],
             listDataA:[ {
                 code: '123456789',
@@ -111,7 +110,6 @@ export default {
 }
 </script>
 <style lang="less">
-
 </style>
 
 

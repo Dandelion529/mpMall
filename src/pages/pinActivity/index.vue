@@ -132,7 +132,6 @@ export default {
         },
 
         bindGetUserInfo(e) {
-            console.log(e,136)
             if (e.mp.detail.rawData){
                 //用户按了允许授权按钮
                 console.log('用户按了允许授权按钮')

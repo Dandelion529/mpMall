@@ -17,8 +17,10 @@
     "build": "node build/build.js wx"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "fs.realpath": "^1.0.0",
     "has-flag": "^3.0.0",
+    "iview": "^3.2.2",
     "less": "^3.9.0",
     "less-loader": "^4.1.0",
     "minimatch": "^3.0.4",

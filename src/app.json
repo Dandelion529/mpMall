@@ -6,7 +6,10 @@
     "pages/mypinList/main",
     "pages/tuanDetail/main",
     "pages/pinActivity/main",
-    "pages/user/main"
+    "pages/user/main",
+    "pages/refund/main",
+    "pages/coupon/main",
+    "pages/couponDetail/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
